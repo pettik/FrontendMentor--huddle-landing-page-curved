@@ -32,10 +32,11 @@ a {
 
 .btn {
   padding: 0.2rem 0.8rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background-color: transparent;
-  border: 2px solid var(--light-pink);
-  font-weight: 600;
+  border: 1px solid var(--light-pink);
+  font-weight: 400;
+  font-size: 0.6rem;
 }
 
 .outline {
@@ -47,8 +48,12 @@ header img {
 }
 
 .header {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .header h1 {
@@ -63,13 +68,25 @@ header img {
   font-size: 0.8rem;
   text-align: center;
   font-weight: 600;
+  margin-bottom: 3rem;
+  line-height: 1.5;
 }
+
+.header .btn.pink {
+  font-size: 0.75rem;
+  background-color: var(--pink);
+  border: 0;
+  color: #fff;
+  padding: 0.7rem 2.3rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
 .header img {
+  margin-top: 6rem;
   width: 100%;
 }
+
 .attribution {
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  display: none;
 }
