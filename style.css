@@ -119,6 +119,10 @@ header img {
   width: 50%;
   margin: 0 auto;
 }
+.grow-together{
+background-color:#000;
+}
+
 .attribution {
   text-align: center;
   display: none;
