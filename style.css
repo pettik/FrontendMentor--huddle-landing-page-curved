@@ -123,6 +123,11 @@ header img {
 background-color:#fff;
 }
 
+.grow-together p,
+.grow-together h2,
+{
+  text-align: center;}
+
 .attribution {
   text-align: center;
   display: none;
