@@ -1,125 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
 
-    <link rel="stylesheet" href="style.css" />
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
 
-    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+}
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <header>
-      <img src="images/logo.svg" alt="Logo" />
-      <a href="#" class="btn outline">Try It Free</a>
-    </header>
-    <main>
-      <section class="header">
-        <h1>Build The Community Your Fans Will Love</h1>
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
-        <a href="#" class="btn pink">Get Started For Free</a>
-        <img src="images/screen-mockups.svg" alt="Screens" />
-      </section>
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  margin-bottom: 6rem;
+}
 
-      <section class="stats">
-        <div class="stats-div">
-          <img src="images/icon-communities.svg" alt="Communites" />
-          <h2>1.4k+</h2>
-          <p>Communities Fourmed</p>
-        </div>
-        <div class="stats-div">
-          <img src="images/icon-messages.svg" alt="Message" />
-          <h2>2.7m+</h2>
-          <p>Messages Sent</p>
-        </div>
-      </section>
+a {
+  text-decoration: none;
+}
 
-      <section class="grow-together">
-        <img
-          src="images/bg-section-top-mobile-1.svg"
-          alt="mobile background top"
-        />
-        <img
-          src="images/illustration-grow-together.svg"
-          alt="Grow Together illustraion"
-          class="illustration"
-        />
-        <h3>Grow Together</h3>
-        <p>
-          Generate meaningful discussions with your audience and build a strong,
-          loyal community. Think of the insightful conversations you miss out on
-          with a feedback form.
-        </p>
-        <img
-          src="images/bg-section-bottom-mobile-1.svg"
-          alt="mobile background bottom"
-        />
-      </section>
+.btn {
+  padding: 0.2rem 0.8rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: 1px solid var(--light-pink);
+  font-weight: 400;
+  font-size: 0.6rem;
+}
 
-      <section class="flowing-conversations">
-        <img
-          src="images/illustration-flowing-conversation.svg"
-          alt="Flowing conversation illustraion"
-        />
-        <h3>Flowing Conversations</h3>
-        <p>
-          You wouldn't paginate a conversation in real life, so why do it
-          online? Our threads have just-in-time loading for a more natural flow.
-        </p>
-      </section>
+.outline {
+  color: var(--light-pink);
+}
 
-      <section class="your-users">
-        <img
-          src="images/bg-section-top-mobile-2.svg"
-          alt="mobile background top"
-        />
-        <img
-          src="images/illustration-your-users.svg"
-          alt="Grow Together illustraion"
-          class="illustration"
-        />
-        <h3>Your Users</h3>
-        <p>
-          It takes no time at all to integrate Huddle with your app's
-          authentication solution. This means, once signed in to your app, your
-          users can start chatting immediately.
-        </p>
-        <img
-          src="images/bg-section-bottom-mobile-2.svg"
-          alt="mobile background bottom"
-        />
-      </section>
-    </main>
+/* *********************** */
+/* HEADER SECTION */
+/* *********************** */
 
-    <!--
-     Ready To Build Your
-    Community? Get Started For Free Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices
-    quis sem. Phone: +1-543-123-4567 example@huddle.com Newsletter To recieve
-    tips on how to grow your community, sign up to our weekly newsletter. We’ll
-    never send you spam or pass on your email address Subscribe -->
+header img {
+  width: 100px;
+}
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
-      </p>
-    </footer>
-  </body>
-</html>
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 6rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.header .btn.pink {
+  font-size: 0.75rem;
+  background-color: var(--pink);
+  border: 0;
+  color: #fff;
+  padding: 0.7rem 2.3rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.header img {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-div {
+  margin-bottom: 4rem;
+}
+
+.stats-div img {
+  width: 25px;
+}
+
+.stats-div h2 {
+  text-align: center;
+  font-size: 3.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.stats-div p {
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+}
+
+.stats-div:nth-of-type(2) p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* *********************** */
+/* SECTION GROW TOGETHER */
+/* *********************** */
+
+.grow-together {
+  margin-top: -3rem;
+}
+
+.illustration {
+  width: 100%;
+
+  background-color: #f6fbff;
+
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding: 6rem 3rem 0 3rem;
+}
+
+.grow-together h3,
+.flowing-conversations h3,
+.your-users h3 {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.grow-together p,
+.flowing-conversations p,
+.your-users p {
+  text-align: center;
+
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+.grow-together p,
+.grow-together h3,
+.your-users p,
+.your-users h3 {
+  background-color: #f6fbff;
+}
+
+.your-users .illustration {
+  padding-top: 2rem;
+}
+.your-users p {
+  padding-bottom: 6rem;
+}
+
+.flowing-conversations img {
+  background-color: #fff;
+  margin-bottom: -1rem;
+  padding: 6rem 3rem 0 3rem;
+  width: 100%;
+}
+
+.flowing-conversations p {
+  margin-bottom: 5rem;
+}
+
+/* *********************** */
+/* FOOTER ATRIBUTION */
+/* *********************** */
+.attribution {
+  text-align: center;
+  display: none;
+}
