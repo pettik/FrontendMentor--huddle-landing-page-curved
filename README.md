@@ -18,3 +18,5 @@ My challenge is to build out this landing page and get it looking as close to th
 
 I can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
+# MOBILE WEBSITE SO FAR (7th Nov 22) 📱⬇️
+<img src="mobile_07-11-2022.png">
