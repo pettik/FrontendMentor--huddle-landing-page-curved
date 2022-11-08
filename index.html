@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -119,7 +126,8 @@
             newsletter. We’ll never send you spam or pass on your email address
           </p>
           <form action="#">
-            <input type="text" aria-label=" " />
+            <label for="email" name="email"></label
+            ><input id="email" type="text" aria-label="email" />
             <button class="btn pink">Subscribe</button>
           </form>
         </div>
@@ -127,12 +135,37 @@
     </main>
 
     <!--
-     Ready To Build Your
-    Community? Get Started For Free Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices
-    quis sem. Phone: +1-543-123-4567 example@huddle.com Newsletter  Subscribe -->
+       Newsletter  Subscribe -->
 
     <footer>
+      <img src="images/logo.svg" alt="Logo" />
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
+        quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+      </p>
+      <div class="phone-box">
+        <span class="icona"><i class="fa-solid fa-phone-volume"></i></span>
+        <p>Phone: +1-543-123-4567</p>
+      </div>
+      <div class="mail-box">
+        <span class="icona"><i class="fa-solid fa-envelope"></i></span>
+        <p>example@huddle.com</p>
+      </div>
+
+      <div class="social-box">
+        <span class="icona">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </span>
+
+        <span class="icona"
+          ><a href="#"><i class="fa-brands fa-circle-thin fa-instagram"></i></a
+        ></span>
+        <span class="icona"
+          ><a href="#"><i class="fa-brands fa-circle-thin fa-twitter"></i></a
+        ></span>
+      </div>
+
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
