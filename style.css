@@ -319,7 +319,7 @@ footer > p {
   }
 
   header {
-    padding: 4.8rem 9.6rem 0;
+    padding: 4.8% 9.5% 0;
     margin-bottom: 14.5rem;
   }
   header img {
@@ -342,6 +342,34 @@ footer > p {
 
   .header h1 {
     font-size: 2.99rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .header p {
+    font-size: 1.25rem;
+    letter-spacing: -0.02rem;
+    margin-bottom: 3rem;
+
+    padding: 0 15.4rem;
+  }
+
+  .btn.pink {
+    font-size: 1.25rem;
+    padding: 1.7rem 6.3rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.9rem;
+  }
+
+  .header img {
+    margin-top: 5rem;
+    width: 94%;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
 }
