@@ -127,6 +127,13 @@ header img {
 /* *********************** */
 /* SECTION GROW TOGETHER */
 /* *********************** */
+.top-mobile {
+  display: block;
+}
+
+.top-desktop {
+  display: none;
+}
 
 .grow-together {
   margin-top: -3rem;
@@ -363,13 +370,45 @@ footer > p {
 
   .header img {
     margin-top: 5rem;
-    width: 94%;
+    margin-bottom: 0.5rem;
+    width: 95%;
   }
 
   .stats {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
+  }
+
+  .stats-div img {
+    width: 43px;
+  }
+  .stats-div:nth-of-type(2) img {
+    margin-left: 0.8rem;
+  }
+
+  .stats-div h2 {
+    font-size: 6rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .stats-div p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .stats-div:nth-of-type(2) p {
+    width: 100%;
+  }
+
+  /* *********************** */
+  /* SECTION GROW TOGETHER */
+  /* *********************** */
+  .top-mobile {
+    display: none;
+  }
+
+  .top-desktop {
+    display: inline-block;
+    width: 100%;
   }
 }
