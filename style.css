@@ -144,7 +144,8 @@ header img {
   margin-top: 0rem;
 }
 
-.illustration {
+.grow-illustration,
+.your-illustration {
   width: 100%;
 
   background-color: #f6fbff;
@@ -180,7 +181,7 @@ header img {
   background-color: #f6fbff;
 }
 
-.your-users .illustration {
+.your-users .your-illustration {
   padding-top: 2rem;
 }
 .your-users p {
@@ -422,7 +423,7 @@ footer > p {
   .bottom-desktop,
   .top-footer-desktop {
     display: inline-block;
-    width: 100%;
+    width: 100vw;
   }
 
   .grow-together {
@@ -431,33 +432,69 @@ footer > p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 6.2rem;
     margin-top: -0.5rem;
   }
 
-  .illustration {
-    width: 50%;
+  .grow-together-img-box,
+  .grow-together-text {
+    flex: 1;
+  }
+
+  .grow-together-img-box {
+    padding: 1rem 16rem 0 3rem;
+  }
+
+  .grow-illustration {
+    width: 100%;
 
     margin: 0;
-    padding: 3rem 16rem 0 2rem;
+    padding: 0;
     order: 1;
   }
 
   .grow-together-text {
     padding: 6rem 0 0 14rem;
+    order: -1;
   }
 
   .grow-together-text h3,
-  .grow-together-text p {
+  .grow-together-text p,
+  .flowing-conversations-text h3,
+  .flowing-conversations-text p {
     text-align: left;
   }
 
-  .grow-together-text h3 {
+  .grow-together-text h3,
+  .flowing-conversations-text h3 {
     font-size: 2.7rem;
     padding-bottom: 1.5rem;
   }
-  .grow-together-text p {
+  .grow-together-text p,
+  .flowing-conversations-text p {
     font-size: 1rem;
     padding: 0 5rem 0 0;
+  }
+
+  .container-box .flowing-conversations > * {
+    flex: 1;
+  }
+
+  .flowing-conversations {
+    display: flex;
+  }
+
+  .flower-illustration {
+    width: 100%;
+
+    margin: 0;
+    padding: 3rem 16rem 0 2rem;
+    order: -1;
+
+    flex: 1;
+  }
+
+  .flowing-conversations-text {
+    width: 50%;
   }
 }
