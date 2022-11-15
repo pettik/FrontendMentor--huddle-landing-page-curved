@@ -1,237 +1,532 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
 
-    <link rel="stylesheet" href="style.css" />
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
 
-    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+}
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <header>
-      <img src="images/logo.svg" alt="Logo" />
-      <a href="#" class="btn outline">Try It Free</a>
-    </header>
-    <main>
-      <div class="container">
-      <section class="header">
-        <h1>Build The Community Your Fans Will Love</h1>
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
-        <a href="#" class="btn pink">Get Started For Free</a>
-        <img src="images/screen-mockups.svg" alt="Screens" />
-      </section>
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  margin-bottom: 6rem;
+}
 
-      <section class="stats">
-        <div class="stats-div">
-          <img src="images/icon-communities.svg" alt="Communites" />
-          <h2>1.4k+</h2>
-          <p>Communities Fourmed</p>
-        </div>
-        <div class="stats-div">
-          <img src="images/icon-messages.svg" alt="Message" />
-          <h2>2.7m+</h2>
-          <p>Messages Sent</p>
-        </div>
-      </section>
-    </div>
+a {
+  text-decoration: none;
+}
 
+.btn {
+  padding: 0.2rem 0.8rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: 1px solid var(--light-pink);
+  font-weight: 400;
+  font-size: 0.6rem;
+}
 
-    <img
-      src="images/bg-section-top-mobile-1.svg"
-      alt="mobile background top"
-      class="top-mobile"
-    />
-    <img
-      src="images/bg-section-top-desktop-1.svg"
-      alt="desktop background top"
-      class="top-desktop"
-    />
-    <div class="container-box">
-      <section class="grow-together">
-      <div class="grow-together-img-box">
-        <img
-        src="images/illustration-grow-together.svg"
-        alt="Grow Together illustraion"
-        class="grow-illustration"
-      />
-      </div>
+.outline {
+  color: var(--light-pink);
+}
 
-        <div class="grow-together-text">
-          <h3>Grow Together</h3>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
-        </div>
-      </section>
-    </div>
-    <img
-      src="images/bg-section-bottom-mobile-1.svg"
-      alt="mobile background bottom"
-      class="bottom-mobile"
-    />
-    <img
-      src="images/bg-section-bottom-desktop-1.svg"
-      alt="desktop background bottom"
-      class="bottom-desktop"
-    />
+/* *********************** */
+/* HEADER SECTION */
+/* *********************** */
 
+header img {
+  width: 100px;
+}
 
-    <div class="container-box">
-      <section class="flowing-conversations">
-        <div class="flowing-conversations-img-box">
-          <img
-          src="images/illustration-flowing-conversation.svg"
-          alt="Flowing conversation illustraion" class="flower-illustration"
-        />
-        </div>
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 6rem;
+}
 
-        <div class="flowing-conversations-text">
-          <h3>Flowing Conversations</h3>
-          <p>
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural flow.
-          </p>
-        </div>
+.header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
 
-      </section>
-    </div>
+.header p {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
 
-    <img
-      src="images/bg-section-top-mobile-1.svg"
-      alt="mobile background top"
-      class="top-mobile"
-    />
-    <img
-      src="images/bg-section-top-desktop-1.svg"
-      alt="desktop background top"
-      class="top-desktop"
-    />
-    <div class="container-box">
-      <section class="your-users">
-        <div class="your-users-img-box">
-          <img
-          src="images/illustration-your-users.svg"
-          alt="Grow Together illustraion"
-          class="your-illustration"
-        />
-        </div>
-        <div class="your-users-text-box">
-          <h3>Your Users</h3>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app, your
-            users can start chatting immediately.
-          </p>
-        </div>
+.btn.pink {
+  font-size: 0.75rem;
+  background-color: var(--pink);
+  border: 0;
+  color: #fff;
+  padding: 0.7rem 2.3rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
 
-      </section>
-    </div>
-    <img
-      src="images/bg-section-bottom-mobile-1.svg"
-      alt="mobile background bottom"
-      class="bottom-mobile"
-    />
-    <img
-      src="images/bg-section-bottom-desktop-1.svg"
-      alt="mobile background bottom"
-      class="bottom-desktop"
-    />
-    <div class="container">
-      <section class="ready">
-        <h2>Ready To Build Your Community?</h2>
-        <a href="#" class="btn pink"> Get Started For Free</a>
-      </section>
-    </div>
+.header img {
+  margin-top: 5rem;
+  width: 100%;
+}
 
-    <img
-      src="images/bg-footer-top-mobile.svg"
-      alt="Mobile footer background"
-      class="top-footer-mobile"
-    />
-    <img
-      src="images/bg-footer-top-desktop.svg"
-      alt="Mobile footer background"
-      class="top-footer-desktop"
-    />
-    <div class="container">
-      <section class="newsletter">
-        <div class="newsletter-box">
-          <h3>Newsletter</h3>
-          <p>
-            To recieve tips on how to grow your community, sign up to our weekly
-            newsletter. We’ll never send you spam or pass on your email address
-          </p>
-          <form action="#">
-            <label for="email" name="email"></label
-            ><input id="email" type="text" aria-label="email" />
-            <button class="btn pink">Subscribe</button>
-          </form>
-        </div>
-      </section>
-    </div>
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    <!--
-       Newsletter  Subscribe -->
+.stats-div {
+  margin-bottom: 4rem;
+}
 
-    <footer>
-      <img src="images/logo.svg" alt="Logo" />
+.stats-div img {
+  width: 25px;
+}
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
-        quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-      </p>
-      <div class="phone-box">
-        <span class="icona"><i class="fa-solid fa-phone-volume"></i></span>
-        <p>Phone: +1-543-123-4567</p>
-      </div>
-      <div class="mail-box">
-        <span class="icona"><i class="fa-solid fa-envelope"></i></span>
-        <p>example@huddle.com</p>
-      </div>
+.stats-div h2 {
+  text-align: center;
+  font-size: 3.3rem;
+  margin-bottom: 0.3rem;
+}
 
-      <div class="social-box">
-        <span class="icona">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        </span>
+.stats-div p {
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+}
 
-        <span class="icona"
-          ><a href="#"><i class="fa-brands fa-circle-thin fa-instagram"></i></a
-        ></span>
-        <span class="icona"
-          ><a href="#"><i class="fa-brands fa-circle-thin fa-twitter"></i></a
-        ></span>
-      </div>
+.stats-div:nth-of-type(2) p {
+  width: 50%;
+  margin: 0 auto;
+}
 
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
-      </p>
-    </footer>
-  </body>
-</html>
+/* *********************** */
+/* SECTION GROW TOGETHER */
+/* *********************** */
+.top-mobile,
+.bottom-mobile,
+.top-footer-mobile {
+  display: inline-block;
+  width: 100%;
+}
+
+.top-desktop,
+.bottom-desktop,
+.top-footer-desktop {
+  display: none;
+}
+
+.grow-together {
+  margin-top: 0rem;
+}
+
+.grow-illustration,
+.your-illustration {
+  width: 100%;
+
+  background-color: #f6fbff;
+
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding: 6rem 3rem 0 3rem;
+}
+
+.grow-together h3,
+.flowing-conversations h3,
+.your-users h3 {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.grow-together p,
+.flowing-conversations p,
+.your-users p {
+  text-align: center;
+
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+.grow-together p,
+.grow-together h3,
+.your-users p,
+.your-users h3 {
+  background-color: #f6fbff;
+}
+
+.your-users .your-illustration {
+  padding-top: 2rem;
+}
+.your-users p {
+  padding-bottom: 6rem;
+}
+
+.flowing-conversations img {
+  background-color: #fff;
+  margin-bottom: -1rem;
+  padding: 6rem 3rem 0 3rem;
+  width: 100%;
+}
+
+.flowing-conversations p {
+  margin-bottom: 5rem;
+}
+
+/* *********************** */
+/* READY SECTION */
+/* *********************** */
+.ready {
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.ready h2 {
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+
+.ready .btn.pink {
+  font-size: 0.85rem;
+}
+
+/* *********************** */
+/* NEWSLETTER SECTION */
+/* *********************** */
+.newsletter-box {
+  margin-top: -0.3rem;
+  padding: 3rem 2rem;
+  background-color: var(--very-dark-cyan);
+  color: #fff;
+}
+.newsletter-box h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.newsletter-box p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-box input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.newsletter-box button.btn.pink {
+  display: block;
+  float: right;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+}
+
+/* *********************** */
+/* FOOTER  */
+/* *********************** */
+footer {
+  background-color: var(--very-dark-cyan);
+  color: #fff;
+  padding: 7rem 2rem 3rem;
+}
+
+footer img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+footer > p {
+  margin-bottom: 2rem;
+}
+
+.phone-box,
+.mail-box {
+  display: flex;
+  column-gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.mail-box {
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.phone-box .icona {
+  transform: rotate(-40deg) translate(20%, 4%);
+}
+
+.icona a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.attribution {
+  text-align: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body::after {
+    content: '';
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 5518px;
+    width: 1440px;
+    margin: 0 auto;
+
+    position: absolute;
+    z-index: -3;
+
+    background: url('design/desktop-design.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+  }
+
+  main {
+    opacity: 0.7;
+  }
+
+  header {
+    padding: 4.8% 9.5% 0;
+    margin-bottom: 14.5rem;
+  }
+  header img {
+    width: 235px;
+    margin-left: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.45rem 1.7rem;
+    border-radius: 2rem;
+    border: 2px solid var(--light-pink);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .container-box {
+    width: 100vw;
+  }
+
+  .header h1 {
+    font-size: 2.99rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .header p {
+    font-size: 1.25rem;
+    letter-spacing: -0.02rem;
+    margin-bottom: 3rem;
+
+    padding: 0 15.4rem;
+  }
+
+  .btn.pink {
+    font-size: 1.25rem;
+    padding: 1.7rem 6.3rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.9rem;
+  }
+
+  .header img {
+    margin-top: 5rem;
+    margin-bottom: 0.5rem;
+    width: 95%;
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .stats-div img {
+    width: 43px;
+  }
+  .stats-div:nth-of-type(2) img {
+    margin-left: 0.8rem;
+  }
+
+  .stats-div h2 {
+    font-size: 6rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .stats-div p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .stats-div:nth-of-type(2) p {
+    width: 100%;
+  }
+
+  /* *********************** */
+  /* SECTION GROW TOGETHER */
+  /* *********************** */
+  .top-mobile,
+  .bottom-mobile,
+  .top-footer-mobile {
+    display: none;
+  }
+
+  .top-desktop,
+  .bottom-desktop,
+  .top-footer-desktop {
+    display: inline-block;
+    width: 100vw;
+  }
+
+  .grow-together,
+  .your-users {
+    background-color: var(--very-pale-blue);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 6.2rem;
+    margin-top: -0.5rem;
+  }
+
+  .grow-together-img-box,
+  .grow-together-text {
+    flex: 1;
+  }
+
+  .grow-together-img-box {
+    padding: 1rem 16rem 0 3rem;
+  }
+
+  .grow-illustration {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    order: 1;
+  }
+
+  .grow-together-text {
+    padding: 6rem 0 0 14rem;
+    order: -1;
+  }
+
+  .grow-together-text h3,
+  .grow-together-text p,
+  .flowing-conversations-text h3,
+  .flowing-conversations-text p,
+  .your-users-text-box h3,
+  .your-users-text-box p {
+    text-align: left;
+  }
+
+  .grow-together-text h3,
+  .flowing-conversations-text h3,
+  .your-users-text-box h3 {
+    font-size: 2.7rem;
+    padding-bottom: 1.5rem;
+  }
+  .grow-together-text p,
+  .flowing-conversations-text p,
+  .your-users-text-box p {
+    font-size: 1rem;
+    padding: 0 5rem 0 0;
+  }
+
+  .flowing-conversations {
+    display: flex;
+  }
+  .container-box .flowing-conversations > * {
+    flex: 1;
+  }
+
+  .flowing-conversations-img-box .flower-illustration {
+    width: auto;
+    height: 480px;
+
+    order: -1;
+
+    margin: 5rem 0 0 11rem;
+    padding-right: 0;
+  }
+
+  .flowing-conversations-text {
+    padding-top: 14.2rem;
+    padding-left: 9rem;
+  }
+
+  .flowing-conversations-text p {
+    padding-right: 14rem;
+  }
+
+  .your-users {
+    display: flex;
+  }
+
+  .your-users .your-users-img-box,
+  .your-users .your-users-text-box {
+    max-width: 50vw;
+  }
+
+  .your-users-img-box {
+    order: 1;
+  }
+
+  .your-users-text-box {
+    padding: 4.3rem 6rem 0 7rem;
+  }
+
+  .your-illustration {
+    margin-top: -0.4rem;
+    width: auto;
+    height: 430px;
+  }
+}
