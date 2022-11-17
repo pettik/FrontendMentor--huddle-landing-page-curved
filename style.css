@@ -525,8 +525,9 @@ footer > p {
   }
 
   .your-illustration {
-    margin-top: -0.4rem;
+    margin-top: -0.42rem;
     width: auto;
     height: 430px;
+    
   }
 }
