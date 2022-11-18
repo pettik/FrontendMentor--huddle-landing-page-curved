@@ -525,9 +525,26 @@ footer > p {
   }
 
   .your-illustration {
-    margin-top: -0.42rem;
+    margin-top: -0.4rem;
     width: auto;
     height: 430px;
-    
+  }
+
+  .ready {
+    margin-top: 12rem;
+    padding-bottom: 3rem;
+  }
+
+  .ready h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .ready a.btn.pink {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    background-color: #00252e;
   }
 }
