@@ -21,5 +21,5 @@ I can use any tools you like to help you complete the challenge. So if you've go
 # MOBILE WEBSITE DONE ✅ (8th Nov 22) 📱⬇️
 <img src="mobile_08-11-2022.png">
 
-# DESKTOP VIEW 🖥️ (9th Nov 22)🧑‍💻 ...still working on it
-<img src="desktop_18-11-2022.png">
+# DESKTOP VIEW DONE ✅ (20th Nov 22) 🖥️⬇️
+<img src="desktop_20-11-2022.png">
