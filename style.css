@@ -245,6 +245,7 @@ header img {
   outline: none;
   border: none;
   margin-bottom: 1rem;
+  padding: 0 1rem;
 }
 
 .newsletter-box button.btn.pink {
@@ -612,5 +613,29 @@ footer > p {
   .icona a {
     font-size: 2rem;
     margin-right: 2rem;
+  }
+
+  @media (hover: hover) {
+    header .btn.outline:hover {
+      box-shadow: 0 0 10px rgba(255, 142, 214, 0.5);
+    }
+
+    header a.btn.outline:hover {
+      text-shadow: 1px 1px 3px rgba(255, 142, 214, 0.5);
+    }
+
+    a.btn.pink:hover {
+      background-color: rgba(255, 142, 214, 0.5);
+      box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    }
+
+    button.btn.pink:hover {
+      cursor: pointer;
+      background-color: rgba(255, 142, 214, 1);
+    }
+
+    .social-box .icona a:hover {
+      color: #00bdeb;
+    }
   }
 }
