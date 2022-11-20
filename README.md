@@ -1,5 +1,3 @@
-# ⚠️ 1st of November 2022 -> Starting this project 🧑‍💻📝
-
 # Frontend Mentor - Huddle landing page with curved sections
 
 ![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)
@@ -23,3 +21,6 @@ I can use any tools you like to help you complete the challenge. So if you've go
 
 # DESKTOP VIEW DONE ✅ (20th Nov 22) 🖥️⬇️
 <img src="desktop_20-11-2022.png">
+
+
+// # ⚠️ 1st of November 2022 -> Starting this project 🧑‍💻📝
